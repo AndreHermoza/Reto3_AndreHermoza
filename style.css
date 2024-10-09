@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007B84;
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: -75px;
+    
+}
+
+li {
+    padding-right: 50px;
+}
+
+nav ul li {
+    margin-left: 80px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    
+    color: black;
+    
+    
+}
+
+ul li:hover {
+    background-color: yellow ;
+    color: black;
+    border-radius: 10px;
+    
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url('./img/imagen\ 1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+}
+
+.mid-text {
+    z-index: 1;
+    text-align: center;
+}
+
+.mid-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .mid-text h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li{
+        position: absolute;
+        top: 0%;
+        display: flex;
+        right: 0;
+        background-color: #007B84;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        
+        
+    }}
